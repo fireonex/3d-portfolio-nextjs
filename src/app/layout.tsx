@@ -8,15 +8,14 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
                                      children,
-                                   }: Readonly<{
+                                   }: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-    <body className="font-poppins text-">
+    <body className="font-poppins">
     {children}
     </body>
     </html>
